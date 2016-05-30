@@ -1,0 +1,32 @@
+Description: fkn latinos
+Samples selected:
+      IPUMS-CPS, ASEC 2015                              regular
+File Type:                    rectangular
+Case Selection:               No
+  Variable               Columns        Len    03/2015
+  HISPAN             P   1-3            3      X 
+
+Variable Availability Key:
+All Years X - available in this sample
+All Years . - not available in this sample
+
+
+ HISPAN		Hispanic origin
+000		Not Hispanic
+100		Mexican
+102		Mexican American
+103		Mexicano/Mexicana
+104		Chicano/Chicana
+108		Mexican (Mexicano)
+109		Mexicano/Chicano
+200		Puerto Rican
+300		Cuban
+400		Dominican
+500		Salvadoran
+		Other Spanish:
+401		Other Hispanic
+410		Central/South American
+411		Central American, (excluding Salvadoran)
+412		South American
+901		Do not know
+902		N/A (and no response 1985-87)

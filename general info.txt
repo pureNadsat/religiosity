@@ -1,0 +1,912 @@
+Description: Revision of (religiosity)
+Samples selected:
+      IPUMS-CPS, ASEC 2015                              regular
+File Type:                    rectangular
+Case Selection:               No
+  Variable               Columns        Len    03/2015
+  STATEFIP           H   1-2            2      X 
+  METRO              H   3              1      X 
+  NCHILD             P   4              1      X 
+  YNGCH              P   5-6            2      X 
+  AGE                P   7-8            2      X 
+  SEX                P   9              1      X 
+  RACE               P  10-12           3      X 
+  MARST              P  13              1      X 
+  EDUC               P  14-16           3      X 
+  OCC1990            P  17-19           3      X 
+  UHRSWORKT          P  20-22           3      X 
+  INCWAGE            P  23-29           7      X 
+
+Variable Availability Key:
+All Years X - available in this sample
+All Years . - not available in this sample
+
+
+ STATEFIP		State (FIPS code)
+01		Alabama
+02		Alaska
+04		Arizona
+05		Arkansas
+06		California
+08		Colorado
+09		Connecticut
+10		Delaware
+11		District of Columbia
+12		Florida
+13		Georgia
+15		Hawaii
+16		Idaho
+17		Illinois
+18		Indiana
+19		Iowa
+20		Kansas
+21		Kentucky
+22		Louisiana
+23		Maine
+24		Maryland
+25		Massachusetts
+26		Michigan
+27		Minnesota
+28		Mississippi
+29		Missouri
+30		Montana
+31		Nebraska
+32		Nevada
+33		New Hampshire
+34		New Jersey
+35		New Mexico
+36		New York
+37		North Carolina
+38		North Dakota
+39		Ohio
+40		Oklahoma
+41		Oregon
+42		Pennsylvania
+44		Rhode Island
+45		South Carolina
+46		South Dakota
+47		Tennessee
+48		Texas
+49		Utah
+50		Vermont
+51		Virginia
+53		Washington
+54		West Virginia
+55		Wisconsin
+56		Wyoming
+61		Maine-New Hampshire-Vermont
+65		Montana-Idaho-Wyoming
+68		Alaska-Hawaii
+69		Nebraska-North Dakota-South Dakota
+70		Maine-Massachusetts-New Hampshire-Rhode Island-Vermont
+71		Michigan-Wisconsin
+72		Minnesota-Iowa
+73		Nebraska-North Dakota-South Dakota-Kansas
+74		Delaware-Virginia
+75		North Carolina-South Carolina
+76		Alabama-Mississippi
+77		Arkansas-Oklahoma
+78		Arizona-New Mexico-Colorado
+79		Idaho-Wyoming-Utah-Montana-Nevada
+80		Alaska-Washington-Hawaii
+81		New Hampshire-Maine-Vermont-Rhode Island
+83		South Carolina-Georgia
+84		Kentucky-Tennessee
+85		Arkansas-Louisiana-Oklahoma
+87		Iowa-N Dakota-S Dakota-Nebraska-Kansas-Minnesota-Missouri
+88		Washington-Oregon-Alaska-Hawaii
+89		Montana-Wyoming-Colorado-New Mexico-Utah-Nevada-Arizona
+90		Delaware-Maryland-Virginia-West Virginia
+99		State not identified
+
+ METRO		Metropolitan central city status
+0		Not identifiable
+1		Not in metro area
+		In metro area
+2		Central city
+3		Outside central city
+4		Central city status unknown
+9		Missing/Unknown
+
+ NCHILD		Number of own children in household
+0		0 children present
+1		1 child present
+2		2
+3		3
+4		4
+5		5
+6		6
+7		7
+8		8
+9		9+
+
+ YNGCH		Age of youngest own child in household
+00		Less than 1 year old
+01		1
+02		2
+03		3
+04		4
+05		5
+06		6
+07		7
+08		8
+09		9
+10		10
+11		11
+12		12
+13		13
+14		14
+15		15
+16		16
+17		17
+18		18
+19		19
+20		20
+21		21
+22		22
+23		23
+24		24
+25		25
+26		26
+27		27
+28		28
+29		29
+30		30
+31		31
+32		32
+33		33
+34		34
+35		35
+36		36
+37		37
+38		38
+39		39
+40		40
+41		41
+42		42
+43		43
+44		44
+45		45
+46		46
+47		47
+48		48
+49		49
+50		50
+51		51
+52		52
+53		53
+54		54
+55		55
+56		56
+57		57
+58		58
+59		59
+60		60
+61		61
+62		62
+63		63
+64		64
+65		65
+66		66
+67		67
+68		68
+69		69
+70		70
+71		71
+72		72
+73		73
+74		74
+75		75
+76		76
+77		77
+78		78
+79		79
+80		80
+81		81
+82		82
+83		83
+84		84
+85		85
+86		86
+87		87
+88		88
+89		89
+90		90
+91		91
+92		92
+93		93
+94		94
+95		95
+96		96
+97		97
+98		98
+99		NIU
+
+ AGE		Age
+00		Under 1 year
+01		1
+02		2
+03		3
+04		4
+05		5
+06		6
+07		7
+08		8
+09		9
+10		10
+11		11
+12		12
+13		13
+14		14
+15		15
+16		16
+17		17
+18		18
+19		19
+20		20
+21		21
+22		22
+23		23
+24		24
+25		25
+26		26
+27		27
+28		28
+29		29
+30		30
+31		31
+32		32
+33		33
+34		34
+35		35
+36		36
+37		37
+38		38
+39		39
+40		40
+41		41
+42		42
+43		43
+44		44
+45		45
+46		46
+47		47
+48		48
+49		49
+50		50
+51		51
+52		52
+53		53
+54		54
+55		55
+56		56
+57		57
+58		58
+59		59
+60		60
+61		61
+62		62
+63		63
+64		64
+65		65
+66		66
+67		67
+68		68
+69		69
+70		70
+71		71
+72		72
+73		73
+74		74
+75		75
+76		76
+77		77
+78		78
+79		79
+80		80
+81		81
+82		82
+83		83
+84		84
+85		85
+86		86
+87		87
+88		88
+89		89
+90		90 (90+, 1988-2002)
+91		91
+92		92
+93		93
+94		94
+95		95
+96		96
+97		97
+98		98
+99		99+
+
+ SEX		Sex
+1		Male
+2		Female
+9		NIU
+
+ RACE		Race
+100		White
+200		Black/Negro
+300		American Indian/Aleut/Eskimo
+650		Asian or Pacific Islander
+651		Asian only
+652		Hawaiian/Pacific Islander only
+700		Other (single) race, n.e.c.
+		Two or more races
+801		White-Black
+802		White-American Indian
+803		White-Asian
+804		White-Hawaiian/Pacific Islander
+805		Black-American Indian
+806		Black-Asian
+807		Black-Hawaiian/Pacific Islander
+808		American Indian-Asian
+809		Asian-Hawaiian/Pacific Islander
+810		White-Black-American Indian
+811		White-Black-Asian
+812		White-American Indian-Asian
+813		White-Asian-Hawaiian/Pacific Islander
+814		White-Black-American Indian-Asian
+815		American Indian-Hawaiian/Pacific Islander
+816		White-Black--Hawaiian/Pacific Islander
+817		White-American Indian-Hawaiian/Pacific Islander
+818		Black-American Indian-Asian
+819		White-American Indian-Asian-Hawaiian/Pacific Islander
+820		Two or three races, unspecified
+830		Four or five races, unspecified
+999		Blank
+
+ MARST		Marital status
+1		Married, spouse present
+2		Married, spouse absent
+3		Separated
+4		Divorced
+5		Widowed
+6		Never married/single
+7		Widowed or Divorced
+9		NIU
+
+ EDUC		Educational attainment recode
+000		NIU or no schooling
+001		NIU or blank
+002		None or preschool
+010		Grades 1, 2, 3, or 4
+011		Grade 1
+012		Grade 2
+013		Grade 3
+014		Grade 4
+020		Grades 5 or 6
+021		Grade 5
+022		Grade 6
+030		Grades 7 or 8
+031		Grade 7
+032		Grade 8
+040		Grade 9
+050		Grade 10
+060		Grade 11
+070		Grade 12
+071		12th grade, no diploma
+072		12th grade, diploma unclear
+073		High school diploma or equivalent
+080		1 year of college
+081		Some college but no degree
+090		2 years of college
+091		Associate's degree, occupational/vocational program
+092		Associate's degree, academic program
+100		3 years of college
+110		4 years of college
+111		Bachelor's degree
+120		5+ years of college
+121		5 years of college
+122		6+ years of college
+123		Master's degree
+124		Professional school degree
+125		Doctorate degree
+999		Missing/Unknown
+
+ OCC1990		Occupation, 1990 basis
+		MANAGERIAL AND PROFESSIONAL SPECIALTY OCCUPATIONS
+		Executive, Administrative, and Managerial Occupations:
+003		Legislators
+004		Chief executives and public administrators
+007		Financial managers
+008		Human resources and labor relations managers
+013		Managers and specialists in marketing, advertising, and public relations
+014		Managers in education and related fields
+015		Managers of medicine and health occupations
+016		Postmasters and mail superintendents
+017		Managers of food-serving and lodging establishments
+018		Managers of properties and real estate
+019		Funeral directors
+021		Managers of service organizations, n.e.c.
+022		Managers and administrators, n.e.c.
+		Management Related Occupations:
+023		Accountants and auditors
+024		Insurance underwriters
+025		Other financial specialists
+026		Management analysts
+027		Personnel, HR, training, and labor relations specialists
+028		Purchasing agents and buyers, of farm products
+029		Buyers, wholesale and retail trade
+033		Purchasing managers, agents and buyers, n.e.c.
+034		Business and promotion agents
+035		Construction inspectors
+036		Inspectors and compliance officers, outside construction
+037		Management support occupations
+		Professional Specialty Occupations
+		Engineers, Architechts, and Surveyors:
+043		Architects
+		Engineers:
+044		Aerospace engineer
+045		Metallurgical and materials engineers, variously phrased
+047		Petroleum, mining, and geological engineers
+048		Chemical engineers
+053		Civil engineers
+055		Electrical engineer
+056		Industrial engineers
+057		Mechanical engineers
+059		Not-elsewhere-classified engineers
+		Mathematical and Computer Scientists:
+064		Computer systems analysts and computer scientists
+065		Operations and systems researchers and analysts
+066		Actuaries
+067		Statisticians
+068		Mathematicians and mathematical scientists
+		Natural Scientists:
+069		Physicists and astronomers
+073		Chemists
+074		Atmospheric and space scientists
+075		Geologists
+076		Physical scientists, n.e.c.
+077		Agricultural and food scientists
+078		Biological scientists
+079		Foresters and conservation scientists
+083		Medical scientists
+		Health Diagnosing Occupations:
+084		Physicians
+085		Dentists
+086		Veterinarians
+087		Optometrists
+088		Podiatrists
+089		Other health and therapy
+		Health Assessment and Treating Occupations:
+095		Registered nurses
+096		Pharmacists
+097		Dietitians and nutritionists
+		Therapists:
+098		Respiratory therapists
+099		Occupational therapists
+103		Physical therapists
+104		Speech therapists
+105		Therapists, n.e.c.
+106		Physicians' assistants
+		Teachers, Postsecondary:
+113		Earth, environmental, and marine science instructors
+114		Biological science instructors
+115		Chemistry instructors
+116		Physics instructors
+118		Psychology instructors
+119		Economics instructors
+123		History instructors
+125		Sociology instructors
+127		Engineering instructors
+128		Math instructors
+139		Education instructors
+145		Law instructors
+147		Theology instructors
+149		Home economics instructors
+150		Humanities profs/instructors, college, nec
+154		Subject instructors (HS/college)
+		Teachers, Except Postsecondary:
+155		Kindergarten and earlier school teachers
+156		Primary school teachers
+157		Secondary school teachers
+158		Special education teachers
+159		Teachers , n.e.c.
+163		Vocational and educational counselors
+		Librarians, Archivists, and Curators:
+164		Librarians
+165		Archivists and curators
+		Social Scientists and Urban Planners:
+166		Economists, market researchers, and survey researchers
+167		Psychologists
+168		Sociologists
+169		Social scientists, n.e.c.
+173		Urban and regional planners
+		Social, Recreation, and Religious Workers:
+174		Social workers
+175		Recreation workers
+176		Clergy and religious workers
+		Lawyers and Judges:
+178		Lawyers 
+179		Judges
+		Writers, Artists, Entertainers, and Athletes:
+183		Writers and authors
+184		Technical writers
+185		Designers
+186		Musician or composer
+187		Actors, directors, producers
+188		Art makers: painters, sculptors, craft-artists, and print-makers
+189		Photographers
+193		Dancers
+194		Art/entertainment performers and related
+195		Editors and reporters
+198		Announcers
+199		Athletes, sports instructors, and officials
+200		Professionals, n.e.c.
+		TECHNICAL, SALES, AND ADMINISTRATIVE SUPPORT OCCUPATIONS
+		Technicians and Related Support Occupations
+		Health Technologists and Technicians:
+203		Clinical laboratory technologies and technicians
+204		Dental hygenists
+205		Health record tech specialists
+206		Radiologic tech specialists
+207		Licensed practical nurses
+208		Health technologists and technicians, n.e.c.
+		Technologists and Technicians, Except Health
+		Engineering and Related Technologists and Technicians:
+213		Electrical and electronic (engineering) technicians
+214		Engineering technicians, n.e.c.
+215		Mechanical engineering technicians
+217		Drafters
+218		Surveyors, cartographers, mapping scientists and technicians
+223		Biological technicians
+		Science Technicians:
+224		Chemical technicians
+225		Other science technicians
+		Technicians, Except Health, Engineering, and Science:
+226		Airplane pilots and navigators
+227		Air traffic controllers
+228		Broadcast equipment operators
+229		Computer software developers
+233		Programmers of numerically controlled machine tools
+234		Legal assistants, paralegals, legal support, etc
+235		Technicians, n.e.c.
+		Sales Occupations:
+243		Supervisors and proprietors of sales jobs
+		Sales Representatives, Finance and Business Services:
+253		Insurance sales occupations
+254		Real estate sales occupations
+255		Financial services sales occupations
+256		Advertising and related sales jobs
+		Sales Representatives, Commodities:
+258		Sales engineers
+274		Salespersons, n.e.c.
+275		Retail sales clerks
+276		Cashiers
+277		Door-to-door sales, street sales, and news vendors
+		Sales Related Occupations:
+283		Sales demonstrators / promoters / models
+290		Sales workers--allocated (1990 internal census)
+		Administrative Support Occupations, Including Clerical
+		Supervisors, Administrative Support Occupations:
+303		Office supervisors
+		Computer Equipment Operators:
+308		Computer and peripheral equipment operators
+		Secretaries, Stenographers, and Typists:
+313		Secretaries
+314		Stenographers
+315		Typists
+		Information Clerks:
+316		Interviewers, enumerators, and surveyors
+317		Hotel clerks
+318		Transportation ticket and reservation agents
+319		Receptionists
+323		Information clerks, nec
+		Records Processing Occupations, Except Financial:
+326		Correspondence and order clerks
+328		Human resources clerks, except payroll and timekeeping
+329		Library assistants
+335		File clerks
+336		Records clerks
+		Financial Records Processing Occupations:
+337		Bookkeepers and accounting and auditing clerks
+338		Payroll and timekeeping clerks
+343		Cost and rate clerks (financial records processing)
+344		Billing clerks and related financial records processing
+		Duplicating, Mail, and Other Office Machine Operators:
+345		Duplication machine operators / office machine operators
+346		Mail and paper handlers
+347		Office machine operators, n.e.c.
+		Communications Equipment Operators:
+348		Telephone operators
+349		Other telecom operators
+		Mail and Message Distributing Occupations:
+354		Postal clerks, excluding mail carriers
+355		Mail carriers for postal service
+356		Mail clerks, outside of post office
+357		Messengers
+		Material Recording, Scheduling, and Distributing Clerks:
+359		Dispatchers
+361		Inspectors, n.e.c.
+364		Shipping and receiving clerks
+365		Stock and inventory clerks
+366		Meter readers
+368		Weighers, measurers, and checkers
+373		Material recording, scheduling, production, planning, and expediting clerks
+		Adjusters and Investigators:
+375		Insurance adjusters, examiners, and investigators
+376		Customer service reps, investigators and adjusters, except insurance
+377		Eligibility clerks for government programs; social welfare
+378		Bill and account collectors
+		Miscellaneous Administrative Support Occupations:
+379		General office clerks
+383		Bank tellers
+384		Proofreaders
+385		Data entry keyers
+386		Statistical clerks
+387		Teacher's aides
+389		Administrative support jobs, n.e.c.
+390		Professional, technical, and kindred workers--allocated (1990 internal census)
+391		Clerical and kindred workers--allocated (1990 internal census)
+		SERVICE OCCUPATIONS
+		Private Household Occupations:
+405		Housekeepers, maids, butlers, stewards, and lodging quarters cleaners
+407		Private household cleaners and servants
+408		Private household workers--allocated (1990 internal census)
+		Protective Service Occupations
+		Supervisors, Protective Servcie Occupations:
+415		Supervisors of guards
+		Firefighting and Fire Prevention Occupations:
+417		Fire fighting, prevention, and inspection
+		Police and Detectives:
+418		Police, detectives, and private investigators
+423		Other law enforcement: sheriffs, bailiffs, correctional institution officers
+		Guards:
+425		Crossing guards and bridge tenders
+426		Guards, watchmen, doorkeepers
+427		Protective services, n.e.c.
+		Service Occupations, Except Protective and Household
+		Food Preparation and Serivce Occupations:
+434		Bartenders
+435		Waiter/waitress
+436		Cooks, variously defined
+438		Food counter and fountain workers
+439		Kitchen workers
+443		Waiter's assistant
+444		Misc food prep workers
+		Health Service Occupations:
+445		Dental assistants
+446		Health aides, except nursing
+447		Nursing aides, orderlies, and attendants
+		Cleaning and Building Service Occupations, Except Households:
+448		Supervisors of cleaning and building service
+453		Janitors
+454		Elevator operators
+455		Pest control occupations
+		Personal Service Occupations:
+456		Supervisors of personal service jobs, n.e.c.
+457		Barbers
+458		Hairdressers and cosmetologists
+459		Recreation facility attendants
+461		Guides
+462		Ushers
+463		Public transportation attendants and inspectors
+464		Baggage porters
+465		Welfare service aides
+468		Child care workers
+469		Personal service occupations, nec
+		FARMING, FORESTRY, AND FISHING OCCUPATIONS
+		Farm Operators and Managers:
+473		Farmers (owners and tenants)
+474		Horticultural specialty farmers
+475		Farm managers, except for horticultural farms
+476		Managers of horticultural specialty farms
+		Other Agricultural and Related Occupations:
+		Farm Occupations, Except Managerial:
+479		Farm workers
+480		Farm laborers and farm foreman--allocated (1990 internal census)
+483		Marine life cultivation workers
+484		Nursery farming workers
+		Related Agricultural Occupations:
+485		Supervisors of agricultural occupations
+486		Gardeners and groundskeepers
+487		Animal caretakers except on farms
+488		Graders and sorters of agricultural products
+489		Inspectors of agricultural products
+		Forestry and Logging Occupations:
+496		Timber, logging, and forestry workers
+		Fishers, Hunters, and Trappers:
+498		Fishers, hunters, and kindred
+		PRECISION PRODUCTION, CRAFT, AND REPAIR OCCUPATIONS
+		Mechanics and Repairers:
+503		Supervisors of mechanics and repairers
+		Mechanics and Repairers, Except Supervisors
+		Vehicle and Mobile Equipment Mechanics and Repairers:
+505		Automobile mechanics
+507		Bus, truck, and stationary engine mechanics
+508		Aircraft mechanics
+509		Small engine repairers
+514		Auto body repairers
+516		Heavy equipment and farm equipment mechanics
+518		Industrial machinery repairers
+519		Machinery maintenance occupations
+		Electrical and Electronic Equipment Repairers:
+523		Repairers of industrial electrical equipment 
+525		Repairers of data processing equipment
+526		Repairers of household appliances and power tools
+527		Telecom and line installers and repairers
+533		Repairers of electrical equipment, n.e.c.
+534		Heating, air conditioning, and refigeration mechanics
+		Miscellaneous Mechanics and Repairers:
+535		Precision makers, repairers, and smiths
+536		Locksmiths and safe repairers
+538		Office machine repairers and mechanics
+539		Repairers of mechanical controls and valves
+543		Elevator installers and repairers
+544		Millwrights
+549		Mechanics and repairers, n.e.c.
+		Construction Trades
+		Supervisors, Construction Occupations:
+558		Supervisors of construction work
+		Construction Trades, Except Supervisors:
+563		Masons, tilers, and carpet installers
+567		Carpenters
+573		Drywall installers
+575		Electricians
+577		Electric power installers and repairers
+579		Painters, construction and maintenance
+583		Paperhangers
+584		Plasterers
+585		Plumbers, pipe fitters, and steamfitters
+588		Concrete and cement workers
+589		Glaziers
+593		Insulation workers
+594		Paving, surfacing, and tamping equipment operators
+595		Roofers and slaters
+596		Sheet metal duct installers
+597		Structural metal workers
+598		Drillers of earth
+599		Construction trades, n.e.c.
+		Extractive Occupations:
+614		Drillers of oil wells
+615		Explosives workers
+616		Miners
+617		Other mining occupations
+		Precision Production Occupations:
+628		Production supervisors or foremen
+		Precision Metal Working Occupations:
+634		Tool and die makers and die setters
+637		Machinists
+643		Boilermakers
+644		Precision grinders and filers
+645		Patternmakers and model makers
+646		Lay-out workers
+649		Engravers
+653		Tinsmiths, coppersmiths, and sheet metal workers
+		Precision Woodworking Occupations:
+657		Cabinetmakers and bench carpenters
+658		Furniture and wood finishers
+659		Other precision woodworkers
+		Precision Textile, Apparel, and Furnishings Machine Workers:
+666		Dressmakers and seamstresses
+667		Tailors
+668		Upholsterers
+669		Shoe repairers
+674		Other precision apparel and fabric workers
+		Precision Workers, Assorted Materials:
+675		Hand molders and shapers, except jewelers 
+677		Optical goods workers
+678		Dental laboratory and medical appliance technicians
+679		Bookbinders
+684		Other precision and craft workers
+		Precision Food Production Occupations:
+686		Butchers and meat cutters
+687		Bakers
+688		Batch food makers
+		Precision Inspectors, Testers, and Related Workers:
+693		Adjusters and calibrators
+		Plant and System Operators:
+694		Water and sewage treatment plant operators
+695		Power plant operators
+696		Plant and system operators, stationary engineers 
+699		Other plant and system operators
+		OPERATORS, FABRICATORS, AND LABORERS
+		Machine Operators, Assemblers, and Inspectors
+		Machine Operators and Tenders, Except Precision
+		Metal Working and Plastic Working Machine Operators:
+703		Lathe, milling, and turning machine operatives
+706		Punching and stamping press operatives
+707		Rollers, roll hands, and finishers of metal
+708		Drilling and boring machine operators
+709		Grinding, abrading, buffing, and polishing workers
+713		Forge and hammer operators
+717		Fabricating machine operators, n.e.c.
+		Metal and Plastic Processing Machine Operators:
+719		Molders, and casting machine operators
+723		Metal platers
+724		Heat treating equipment operators
+		Woodworking Machine Operators:
+726		Wood lathe, routing, and planing machine operators
+727		Sawing machine operators and sawyers
+728		Shaping and joining machine operator (woodworking)
+729		Nail and tacking machine operators  (woodworking)
+733		Other woodworking machine operators
+		Printing Machine Operators:
+734		Printing machine operators, n.e.c.
+735		Photoengravers and lithographers
+736		Typesetters and compositors
+		Textile, Apparel, and Furnishings Machine Operators:
+738		Winding and twisting textile/apparel operatives
+739		Knitters, loopers, and toppers textile operatives
+743		Textile cutting machine operators
+744		Textile sewing machine operators
+745		Shoemaking machine operators
+747		Pressing machine operators (clothing)
+748		Laundry workers
+749		Misc textile machine operators
+		Machine Operators, Assorted Materials:
+753		Cementing and gluing maching operators
+754		Packers, fillers, and wrappers
+755		Extruding and forming machine operators
+756		Mixing and blending machine operatives
+757		Separating, filtering, and clarifying machine operators
+759		Painting machine operators
+763		Roasting and baking machine operators (food)
+764		Washing, cleaning, and pickling machine operators
+765		Paper folding machine operators
+766		Furnace, kiln, and oven operators, apart from food
+768		Crushing and grinding machine operators
+769		Slicing and cutting machine operators
+773		Motion picture projectionists
+774		Photographic process workers
+779		Machine operators, n.e.c.
+		Fabricators, Assemblers, and Hand Working Occupations:
+783		Welders and metal cutters
+784		Solderers
+785		Assemblers of electrical equipment
+789		Hand painting, coating, and decorating occupations
+		Production Inspectors, Testers, Samplers, and Weighers:
+796		Production checkers and inspectors
+799		Graders and sorters in manufacturing
+		Transportation and Material Moving Occupations
+		Motor Vehicle Operators:
+803		Supervisors of motor vehicle transportation
+804		Truck, delivery, and tractor drivers
+808		Bus drivers
+809		Taxi cab drivers and chauffeurs
+813		Parking lot attendants
+815		Transport equipment operatives--allocated (1990 internal census)
+		Transportation Occupations, Except Motor Vehicles
+		Rail Transportation Occupations:
+823		Railroad conductors and yardmasters
+824		Locomotive operators (engineers and firemen)
+825		Railroad brake, coupler, and switch operators
+		Water Transportation Occupations:
+829		Ship crews and marine engineers
+834		Water transport infrastructure tenders and crossing guards
+		Material Moving Equipment Operators:
+844		Operating engineers of construction equipment
+848		Crane, derrick, winch, and hoist operators
+853		Excavating and loading machine operators
+859		Misc material moving occupations
+		Helpers, Construction and Extractive Occupations:
+865		Helpers, constructions
+866		Helpers, surveyors
+869		Construction laborers
+874		Production helpers
+		Freight, Stock, and Material Handlers:
+875		Garbage and recyclable material collectors
+876		Materials movers: stevedores and longshore workers
+877		Stock handlers
+878		Machine feeders and offbearers
+883		Freight, stock, and materials handlers
+885		Garage and service station related occupations
+887		Vehicle washers and equipment cleaners
+888		Packers and packagers by hand
+889		Laborers outside construction
+890		Laborers, except farm--allocated (1990 internal census)
+		MILITARY OCCUPATIONS
+905		Military
+		EXPERIENCED UNEMPLOYED NOT CLASSIFIED BY OCCUPATION
+991		Unemployed
+999		Unknown
+
+ UHRSWORKT		Hours usually worked per week at all jobs
+997		Hours vary
+999		NIU
